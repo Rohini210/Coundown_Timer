@@ -1,0 +1,119 @@
+body {
+    background-color: rgb(240, 235, 235);
+    opacity: inherit;
+}
+
+h1 {
+    color: rgb(85, 85, 94);
+    text-align: center;
+    margin-top: 1.7em;
+    font-size: 40px;
+}
+
+#buttons {
+    float: right;
+    margin-right: 30em;
+    margin-top: 9em;
+    margin-bottom: 15em;
+    height: 10em;
+    width: 10em;
+}
+
+#b1:hover,
+#b2:hover {
+    background-color: rgb(124, 117, 117);
+    color: white;
+    border: 1px solid black;
+}
+
+.b:first-child {
+    height: 50px;
+    width: 100px;
+    background-color: rgb(207, 202, 202);
+    margin-left: 2.3em;
+    margin-bottom: 40px;
+    margin-top: 2em;
+    border-radius: 10px;
+    border: 3px solid rgb(112, 104, 104);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 23px;
+    font-weight: bold;
+    font-family: "Times New Roman";
+    cursor: pointer;
+    box-shadow: 0 6px #999;
+}
+
+.b:nth-child(2) {
+    height: 50px;
+    width: 150px;
+    background-color: rgb(207, 202, 202);
+    margin-left: 1em;
+    margin-bottom: 8em;
+    margin-top: 40px;
+    border-radius: 10px;
+    border: 3px solid rgb(112, 104, 104);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 23px;
+    font-weight: bold;
+    font-family: "Times New Roman";
+    cursor: pointer;
+    box-shadow: 0 6px #999;
+}
+
+.base-timer {
+    position: fixed;
+    height: 300px;
+    width: 300px;
+    margin-top: 7em;
+    margin-left: 25em;
+    display: inline-block;
+}
+
+.base-timer__circle {
+    fill: none;
+    stroke: none;
+}
+
+.base-timer__path-elapsed {
+    stroke-width: 4px;
+    stroke: rgb(54, 52, 52);
+}
+
+.base-timer__label {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+    color: rgb(4, 4, 75);
+    font-weight: bold;
+    font-family: "Times New Roman";
+}
+
+.base-timer__path-remaining {
+    stroke-width: 26px;
+    stroke-linecap: butt;
+    transform: rotate(90deg);
+    transform-origin: center;
+    transition: 1s linear all;
+    stroke: currentColor;
+}
+
+.base-timer__path-remaining.yellow {
+    color: rgb(241, 241, 45);
+}
+
+.base-timer__path-remaining.red {
+    color: rgb(236, 17, 17);
+}
+
+.base-timer__svg {
+    transform: scaleX(1);
+}
